@@ -1,6 +1,7 @@
 BELKAGRAPH v020
 Visualizador y compositor de escucha de radio de onda corta para escena.
 Parte de la colección Alchemy of Meaning (Alquimia del Significado).
+Autoría: Héctor Cruz Juárez y Claude (Anthropic), en colaboración creativa.
 © 2026 Héctor Cruz Juárez · https://hectorcruz.com.mx
 Software libre bajo licencia GPL-3.0-or-later (ver LICENSE.txt).
 
