@@ -1,0 +1,61 @@
+BELKAGRAPH v020
+Visualizador y compositor de escucha de radio de onda corta para escena.
+Parte de la colección Alchemy of Meaning (Alquimia del Significado).
+© 2026 Héctor Cruz Juárez · https://hectorcruz.com.mx
+Software libre bajo licencia GPL-3.0-or-later (ver LICENSE.txt).
+
+CONTENIDO
+  index.html              la app completa, en un solo archivo
+  manifest.webmanifest    datos para instalarla como app
+  sw.js                   modo sin conexión
+  icono.svg               ícono (vectorial)
+  icon-192.png, icon-512.png, icon-maskable-512.png, apple-touch-icon.png,
+  favicon-32.png          ícono en sus tamaños
+  LICENSE.txt             texto completo de la GPL-3.0
+  LEEME.txt               este archivo
+
+CÓMO SUBIRLA
+  Sube la carpeta completa, tal cual, a tu host y ábrela por HTTPS:
+  https://hectorcruz.com.mx/app/belkagraph/
+  No necesita base de datos ni servidor especial. Pesa unos 150 KB y no
+  descarga nada más.
+
+INSTALARLA COMO APP
+  La primera vez que la abras desde tu host queda guardada para funcionar
+  sin internet.
+  Chrome o Edge (computadora): ícono de instalar en la barra de dirección,
+    o menú ⋮ → "Instalar Belkagraph". Abre en su propia ventana, sin barras.
+  iPhone o iPad (Safari): Compartir → "Agregar a pantalla de inicio".
+  Android (Chrome): menú ⋮ → "Instalar app" o "Agregar a pantalla principal".
+  Al subir una versión nueva, la app la toma sola la siguiente vez que se
+  abra con conexión.
+
+COMPARTIRLA
+  Comparte la dirección de tu host. Quien la abra puede usarla e instalarla.
+  Es software libre: cualquiera puede usarla, estudiarla, modificarla y
+  compartirla; toda versión derivada que se distribuya debe conservar la
+  GPL-3.0 y su código fuente (el código fuente es index.html).
+  Para publicarla en GitHub, sube esta carpeta como repositorio: ya trae
+  la licencia y la documentación.
+
+NOVEDADES DE LA v020
+  - Cada figura cruza el cuadro una sola vez, como una onda que pasa:
+    aparece, flota por un camino curvo, gira sobre su eje z y se voltea
+    sobre los ejes x e y (se adelgaza y vuelve a abrirse), y se deshace al
+    salir. Mientras una se va, la siguiente llega.
+  - Sólo nace una figura nueva cuando la anterior termina su paso y el
+    sonido cambia; con estática, la última termina de irse y no viene otra.
+  - Reacción por defecto en 7%: el sonido sólo deja destellos suaves.
+  - Ventana Movimiento: "recorrido" (qué tanto viaja cada figura) y
+    "giro de figuras" (cuánto rota y se voltea).
+  - Ícono propio, instalación como app y modo sin conexión.
+
+COMPOSICIÓN (desde la v019, tecla C)
+  escucha / acompañar / componer: una capa sonora procedural que escucha la
+  radio (bordón, acordes lentos, campanas, cuerdas, viento y ecos de lo que
+  se oyó). Con micrófono usa audífonos.
+
+TECLAS
+  V o H   ocultar / mostrar interfaz      1 2 3   señal / exposición / ambas
+  R       otra figura                     F       película HP5
+  C       modo de composición             Esc     cerrar "acerca de"
