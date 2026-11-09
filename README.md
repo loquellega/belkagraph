@@ -2,7 +2,7 @@
 
 **Versión 020 (v020)** · Héctor Cruz Juárez · Alchemy of Meaning
 
-![Una figura cruza el cuadro hecha de partículas sobre la cascada del espectro, con el marco de datos de la escucha](docs/capturas/03-escena.png)
+![Un anillo de partículas se voltea al cruzar el cuadro, sobre la cascada del espectro y con el marco de datos de la escucha](docs/capturas/03-escena.png)
 
 ## Español
 
@@ -18,11 +18,11 @@ Nació de la escucha con un receptor Belka DX y de la memoria de los grandes rad
 
 **Cada figura pasa una sola vez.** Aparece, flota por un camino curvo, gira sobre su eje y se voltea sobre los otros dos, y se deshace al salir, como la onda que se está escuchando. Mientras una se va, la siguiente llega. Un catálogo de más de mil formas base dibujadas en el momento: no descarga imágenes.
 
-![Una espiral cruza el cuadro mientras se voltea](docs/capturas/04-escena-paso.png)
+![Una figura se adelgaza hasta ser una línea mientras gira y cruza el cuadro](docs/capturas/04-escena-paso.png)
 
 **El espectro dentro de la imagen.** Lo que suena se escribe en la imagen y avanza con el tiempo, en cascada, horizonte o anillo. Las partículas sueltas nacen en las frecuencias que suenan y viajan con él. Encima, película HP5, motion blur, aberración cromática y un marco de datos con hora, coordenadas, nivel, señal/ruido y temperatura de ruido.
 
-![Anillos concéntricos que llegan desde la señal](docs/capturas/06-escena-anillos.png)
+![Un signo se forma entre la estática cuando la voz se sintoniza](docs/capturas/06-escena-signo.png)
 
 **Composición.** Una capa sonora procedural escucha la radio y le responde: las alturas que se oyen con claridad fijan la tónica de un bordón y de acordes lentos, la estática se vuelve viento, los silbidos y el Morse se responden con campanas, la voz recibe notas de cuerda, y los fragmentos claros se guardan y vuelven lentos y lejanos. Tres modos: escucha, acompañar y componer.
 
