@@ -1,6 +1,6 @@
 # Belkagraph
 
-**Versión 020 (v020)** · Alchemy of Meaning (Alquimia del Significado) · Héctor Cruz Juárez
+**Versión 020 (v020)** · Héctor Cruz Juárez · Alchemy of Meaning
 
 ![Una figura cruza el cuadro hecha de partículas sobre la cascada del espectro, con el marco de datos de la escucha](docs/capturas/03-escena.png)
 
@@ -68,7 +68,7 @@ It was born from listening with a Belka DX receiver and from the memory of the g
 ## Créditos · Credits
 
 Diseño, investigación y desarrollo: Héctor Cruz Juárez — https://hectorcruz.com.mx  
-Colección Alchemy of Meaning (Alquimia del Significado).
+Colección Alchemy of Meaning.
 
 ## Licencia · License
 
