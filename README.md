@@ -28,6 +28,8 @@ Nació de la escucha con un receptor Belka DX y de la memoria de los grandes rad
 
 ![La ventana Composición](docs/capturas/05-composicion.png)
 
+**Interfaz de la colección.** Sigue el estilo de Alchemy of Meaning: ventanas pequeñas sobre negro, líneas finas, lecturas con valor real y un solo acento verde para lo que está vivo (la radio sonando, la composición activa, los medidores y el relleno de los deslizadores).
+
 **Para escena.** Pantalla completa sin interfaz, control general de reacción (7% por defecto), exposición acumulada de toda la escucha y guardado del cuadro en PNG. Se instala como app y funciona sin conexión.
 
 ![Pantalla de inicio: elegir de dónde viene el sonido](docs/capturas/01-inicio.png)

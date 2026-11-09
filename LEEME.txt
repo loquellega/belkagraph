@@ -40,6 +40,9 @@ COMPARTIRLA
   la licencia y la documentación.
 
 NOVEDADES DE LA v020
+  - Interfaz con el estilo de la colección Alchemy of Meaning (UI v1): ventanas
+    grises de líneas finas, segmentados con el activo en tinta clara, y verde
+    sólo para lo vivo (escuchar, acompañar o componer, medidores, deslizadores).
   - Cada figura cruza el cuadro una sola vez, como una onda que pasa:
     aparece, flota por un camino curvo, gira sobre su eje z y se voltea
     sobre los ejes x e y (se adelgaza y vuelve a abrirse), y se deshace al

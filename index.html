@@ -151,6 +151,68 @@ body.nohud.showframe #frame{display:block!important}
 @media (max-width:700px){#frame .n,#fTitle{font-size:8.5px}}
 body.showframe #state,body.showframe #brand{display:none!important}
 body.showframe #aTag{bottom:auto;top:46px}
+
+/* ---------- Alchemy of Meaning · UI v1 (tokens y componentes de la colección) ---------- */
+:root{
+  --a-bg:#0a0a0a;--a-panel:#101010;--a-bar:#1c1c1c;--a-line:#2e2e2e;--a-line-ctl:#3a3a3a;--a-hover:#1f1f1f;
+  --a-ink:#d2d2d2;--a-ink-strong:#fff;--a-ink-dim:#8f8f8f;
+  --a-accent:#76c411;--a-accent-ink:#a5e04a;--a-accent-bg:#1b2512;
+  --a-radius:3px;--a-radius-sm:2px;--a-gap:8px;--a-pad:10px;--a-bar-h:24px;--a-ctl-h:32px;--a-t:120ms;
+  --a-font:Inter,Arial,Helvetica,sans-serif;--a-size:12px;--a-size-sm:11px;
+}
+:root[data-contrast="alto"]{--a-bg:#000;--a-panel:#000;--a-bar:#fff;--a-line:#fff;--a-line-ctl:#fff;--a-hover:#262626;--a-ink:#fff;--a-ink-dim:#a8a8a8}
+:root[data-contrast="alto"] .tb,:root[data-contrast="alto"] .tb button{color:#000}
+html,body,#app,#stage,.tube{background:var(--a-bg)}
+body{font:400 var(--a-size)/1.5 var(--a-font);color:var(--a-ink);font-variant-numeric:tabular-nums;-webkit-font-smoothing:antialiased}
+:focus-visible{outline:2px solid var(--a-accent);outline-offset:2px}
+/* ventanas */
+.win{border:1px solid var(--a-line);border-radius:var(--a-radius);background:var(--a-panel)}
+.tb{height:var(--a-bar-h);padding:0 var(--a-pad);background:var(--a-bar);border-bottom:1px solid var(--a-line);color:var(--a-ink);font-size:var(--a-size-sm);font-weight:500;letter-spacing:.02em}
+.tb button{color:var(--a-ink-dim);font-size:var(--a-size-sm)}.tb button:hover{color:var(--a-ink-strong)}
+.wb{padding:var(--a-pad);gap:var(--a-gap)}
+.col,#B{background:var(--a-bg);scrollbar-width:thin;scrollbar-color:var(--a-line-ctl) transparent}
+#L{border-right:1px solid var(--a-line)}#R{border-left:1px solid var(--a-line)}#B{border-top:1px solid var(--a-line)}
+/* botones */
+.b{background:transparent;color:var(--a-ink);border:1px solid var(--a-line-ctl);border-radius:var(--a-radius);font-size:var(--a-size);
+  transition:background var(--a-t),border-color var(--a-t),color var(--a-t)}
+.b:hover{background:var(--a-hover);border-color:#555}
+.b[aria-pressed="true"]{background:var(--a-accent-bg);border-color:var(--a-accent);color:var(--a-accent-ink)}
+.b.s{min-height:26px;font-size:var(--a-size-sm)}
+/* segmentados: el activo en tinta clara (el verde es solo para lo vivo) */
+.seg{border:1px solid var(--a-line-ctl);border-radius:var(--a-radius);overflow:hidden;gap:0}
+.seg .b{margin:0;border:0;border-radius:0;box-shadow:inset 1px 1px 0 var(--a-line-ctl);min-height:26px}
+.seg .b[aria-pressed="true"]{background:var(--a-ink);color:#0a0a0a;font-weight:500}
+.seg .b:hover:not([aria-pressed="true"]){background:var(--a-hover)}
+/* lo vivo: un alternador solo dentro de su grupo (escuchar, aparición, etc.) y el modo de composición que suena */
+.seg .b.live[aria-pressed="true"]{background:var(--a-accent-bg);color:var(--a-accent-ink);box-shadow:inset 0 0 0 1px var(--a-accent)}
+/* lecturas */
+.dr .lb,.mt .lb,.sel .lb,.note{color:var(--a-ink-dim);font-size:var(--a-size-sm)}
+output{color:var(--a-ink-strong)}
+select,.sel input{background:var(--a-panel);color:var(--a-ink);border:1px solid var(--a-line-ctl);border-radius:var(--a-radius-sm);font-size:var(--a-size-sm);padding:4px 6px}
+/* deslizador: línea de 2 px con relleno de acento, tirador 6×14 */
+input[type=range]::-webkit-slider-runnable-track{height:2px;border-radius:1px;background:linear-gradient(to right,var(--a-accent) var(--fill,0%),var(--a-line) var(--fill,0%))}
+input[type=range]::-webkit-slider-thumb{width:6px;height:14px;margin-top:-6px;border-radius:1px;background:var(--a-ink-strong)}
+input[type=range]::-moz-range-track{height:2px;background:var(--a-line)}
+input[type=range]::-moz-range-progress{height:2px;background:var(--a-accent)}
+input[type=range]::-moz-range-thumb{width:6px;height:14px;border-radius:1px;background:var(--a-ink-strong)}
+/* medidores finos */
+.mt .bar{height:3px;border:0;border-radius:2px;background:var(--a-line)}
+.mt .bar i{background:var(--a-accent);border-radius:2px;transition:width .15s}
+.mt .bar u{top:-4px;bottom:-4px;background:var(--a-ink-dim)}
+#spec{border:1px solid var(--a-line);border-radius:var(--a-radius-sm);background:var(--a-bg)}
+/* superpuestos */
+#show{background:var(--a-panel);border:1px solid var(--a-line-ctl);border-radius:var(--a-radius);color:var(--a-ink)}
+#state i{border-color:currentColor;border-radius:50%}
+#state i.on{background:currentColor}
+.card{background:var(--a-panel);border:1px solid var(--a-line);border-radius:var(--a-radius)}
+.card p{color:var(--a-ink)}.card p.tip{color:var(--a-ink-dim)}.card a{color:var(--a-ink-strong)}
+.card h2,.card h3{color:var(--a-ink-strong)}
+.appIcon{border:1px solid var(--a-line);border-radius:var(--a-radius)}
+#start .seg{border-color:var(--a-line-ctl)}
+#top .b{background:rgba(16,16,16,.85)}
+#top .b[aria-pressed="true"]{background:rgba(16,16,16,.85);border-color:#666;color:var(--a-ink-strong)}
+.g1{grid-template-columns:1fr}
+#toast{background:var(--a-panel);border:1px solid var(--a-line-ctl);border-radius:var(--a-radius);color:var(--a-ink);font-size:var(--a-size-sm)}
 </style>
 </head>
 <body>
@@ -1871,10 +1933,10 @@ function build(){
   wb.append(slider('ganancia',()=>S.gain/4,v=>{S.gain=Math.max(.05,v*4);applyChain();},v=>(v*4).toFixed(1)+'×'));
   wb.append(slider('umbral silencio',()=>S.gate,v=>{S.gate=v;},v=>{const g=.0003*Math.pow(100,v);return (20*Math.log10(g)).toFixed(0)+' dB';}));
   wb.append(slider('sensibilidad voz',()=>S.sens,v=>{S.sens=v;},pct));
-  wb.append(segOf('g2',[tgBtn('escuchar',()=>S.monitor,()=>{S.monitor=!S.monitor;applyChain();})]));
+  wb.append(segOf('g1',[tgBtn('escuchar',()=>S.monitor,()=>{S.monitor=!S.monitor;applyChain();},'b s live')]));
   wb.append(el('p','note','"escuchar" manda la radio a las bocinas con línea, grabación y demo. El micrófono y la pestaña nunca se monitorean, para no realimentar.'));
   wb=win('Composición','wSnd',L);
-  wb.append(segOf('g3',[tgBtn('escucha',()=>S.snd.mode==='escucha',()=>sndMode('escucha')),tgBtn('acompañar',()=>S.snd.mode==='acompañar',()=>sndMode('acompañar')),tgBtn('componer',()=>S.snd.mode==='componer',()=>sndMode('componer'))]));
+  wb.append(segOf('g3',[tgBtn('escucha',()=>S.snd.mode==='escucha',()=>sndMode('escucha')),tgBtn('acompañar',()=>S.snd.mode==='acompañar',()=>sndMode('acompañar'),'b s live'),tgBtn('componer',()=>S.snd.mode==='componer',()=>sndMode('componer'),'b s live')]));
   wb.append(slider('procedural',()=>S.snd.proc,v=>{S.snd.proc=v;sndLevels();},pct));
   wb.append(slider('ecos de radio',()=>S.snd.ecos,v=>{S.snd.ecos=v;sndLevels();},pct));
   wb.append(slider('espacio',()=>S.snd.space,v=>{S.snd.space=v;sndLevels();},pct));
@@ -2039,6 +2101,9 @@ addEventListener('keydown',e=>{
 function fit(){const st=$('#stage'),tb=$('.tube'),w=st.clientWidth,h=st.clientHeight;let tw=w,th=w*3/4;if(th>h){th=h;tw=h*4/3;}tb.style.width=Math.floor(tw)+'px';tb.style.height=Math.floor(th)+'px';}
 new ResizeObserver(fit).observe($('#stage'));
 buildVig();newFrag('rostro');build();fit();applyFrame();
+// relleno de acento en los deslizadores
+{const fill=r=>{const mn=+r.min||0,mx=+r.max||1;r.style.setProperty('--fill',((+r.value-mn)/(mx-mn)*100)+'%');};
+ document.querySelectorAll('input[type=range]').forEach(fill);addEventListener('input',e=>{if(e.target.type==='range')fill(e.target);},true);}
 requestAnimationFrame(frame);
 // instalar y usar sin conexión: sólo funciona servido desde tu host (https) o localhost
 try{if('serviceWorker' in navigator&&(location.protocol==='https:'||location.hostname==='localhost')&&window.top===window.self)
